@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    color: black;
+}
+/**Header start**/
+.header{
+    background-color: black;
+    border-radius: 25px;
+    margin: 45px;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+.head{
+    width: 80%;
+    padding-left: 2%;
+    position: relative;
+}
+.head img{
+    width: 80%;
+    margin-left: 90px;
+}
+.h1{
+    font-weight: bold;
+    font-size: 64px;
+    color: aliceblue;
+}
+.p{
+    font-size: 20px;
+    color: aliceblue;
+}
+.btn{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+.btn:hover
+{
+    color: white;
+    background-color: red;
+    box-shadow: 0 0 10px red, 0 0 40px red, 0 0 80px red;
+    transition-delay: 0.5s;
+}
+/**head close**/
+/**side nav**/
+.sidenav {
+    width: 300px;
+    position: static;
+    z-index: 1;
+    top: 20px;
+    left: 10px;
+    background: black;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    display: block;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid white;
+  }
+  .sidenav a:hover{
+    background-color: red;
+    color: aliceblue;
+  }
+  a.active{
+    background-color: red;
+    color: white;
+  }
+  /**side nav close**/
+/**matches**/
+  .main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+  .matchs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+  .match{
+    height: 250px;
+    width: 250px;
+    background-color: whitesmoke;
+    text-align: center;
+    border: 1px solid white;
+    padding-top: 85px;
+    margin: 5px;
+    border-radius: 15px;
+  }
+/**Matches end**/
+  /**Footer**/
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+.footer-item{
+    padding: 5px;
+}
+.terms{
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px)
+{
+    .main{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .sidenav {
+        width: 550px;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        padding: 10px;
+      }
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color:black;
+        display: flex;
+        text-align: center;
+        margin: 10px;
+      }
+      a.active{
+        background-color: red;
+        color: white;
+      }
+    .matchs{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    
+}
+/**phone**/
+@media (max-width:576px)
+{
+    .container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sidenav {
+        background-color: black;
+        width: 330px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        border-radius: 10px;
+      }
+      
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color:white;
+        display: block;
+        text-align: center;
+        margin: 10px;
+      }
+      a.active{
+        background-color: red;
+        color: white;
+      }
+    .matchs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 20px;
+        margin-top: 10px;
+        margin-right: 20px;
+    }
+    .terms{
+        width: 300px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+        position: relative;
+    }
+    
+}
